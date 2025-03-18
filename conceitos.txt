@@ -1,0 +1,94 @@
+Conceitos da Orientação à Objetos:
+O mundo real é algo extremamente complexo. Quanto mais de perto
+o observamos, mais claramente percebemos sua complexidade.
+A orientação a objetos tenta gerenciar a complexidade inerente dos
+problemas do mundo real, abstraindo conhecimento relevante e
+encapsulando-o dentro de objetos.
+
+Abstração:
+Uma das principais formas do ser humano lidar com a complexidade é através do
+uso de abstrações.
+As pessoas tipicamente tentam compreender o mundo, construindo modelos
+mentais de partes dele. Tais modelos são uma visão simplificada de algo, onde
+apenas elementos relevantes são considerados.
+Exemplo: Mapa de um território.
+
+Encapsulamento:
+No mundo real, um objeto pode interagir com outro sem conhecer seu
+funcionamento interno. Uma pessoa, por exemplo, geralmente utiliza uma
+televisão sem saber efetivamente qual a sua estrutura interna ou como seus
+mecanismos internos são ativados. Para utilizá-la, basta saber realizar algumas
+operações básicas, tais como ligar/desligar a TV, mudar de um canal para outro,
+regular volume, cor, etc.
+O encapsulamento consiste na separação dos aspectos externos de um objeto,
+acessíveis por outros objetos, de seus detalhes internos de implementação, que
+ficam ocultos dos demais objetos.
+
+Modularidade:
+Muitos métodos de construção de software buscam obter sistemas modulares, isto
+é, construídos a partir de elementos que sejam autônomos, conectados por uma
+estrutura simples e coerente.
+Modularidade é crucial para se obter re-usabilidade e extensibilidade.
+
+Hierarquia>
+Um conjunto de abstrações frequentemente
+forma uma hierarquia e, pela identificação
+dessas hierarquias, é possível simplificar
+significativamente o entendimento sobre um
+problema.Em suma, hierarquia é uma forma de
+arrumar as abstrações.
+
+**Classes e Objetos**
+Uma classe é um molde ou modelo que define as características (atributos) e os
+comportamentos (métodos) de um objeto.
+Para entender melhor o conceito de classe, vamos analisar suas instâncias,
+conhecidas como objeto. Um objeto é um termo que usamos para representar
+uma entidade do mundo real (fazemos isso através do exercício da abstração).
+Vamos usar como exemplo o cachorro Muttley
+
+Podemos representá-lo em termos de atributos:
+• Seu tamanho é pequeno
+• Sua cor predominante é castanha
+Podemos representá-lo também através de seu “comportamento” (métodos):
+• Ele é capaz de latir
+• Ele é capaz de balançar a cauda
+
+
+Identificação de Classes
+Logo, Muttley é um objeto da classe Cachorro da qual ele faz parte.
+
+Cachorro 
++tamanho:type
++cor:type
++latir(type):type 
++moverCauda(type):type
+
+Atenção para a convenção de nomenclatura para os atributos e métodos, devem
+começar com letra minúscula e a primeira letra de cada nova palavra maiúscula
+(não deve ter espaços)
+
+
+UML
+A UML (Unified Modeling Language) é uma linguagem visual padronizada para
+modelar sistemas de software. Ela ajuda a representar a estrutura e o
+comportamento de um sistema de forma clara e compreensível.
+🔹 Objetivo: Facilitar a comunicação entre desenvolvedores, arquitetos de
+software e stakeholders.
+🔹 Principais Diagramas: UML possui vários diagramas, como diagrama de
+classes, casos de uso, sequência, atividades, entre outros.
+O diagrama de classes é um dos mais importantes da UML. Ele representa a
+estrutura estática do sistema, mostrando:
+✅ Classes e seus atributos
+✅ Métodos (comportamentos das classes)
+✅ Relacionamentos entre as classes (associação, herança, agregação,
+composição)
+
+Herança
+Em orientação a objeto podemos criar uma classe base e, a partir desta classe,
+criar subclasses relacionadas. As subclasses herdarão todos os atributos e métodos
+da classe base e poderão ter seus próprios atributos e métodos.
+
+AnimalDosmestico
++tamanho:type
++cor:type 
++moverCauda(type):type ---->Cachorro +latir(type):type////Gato +miar(type):type
